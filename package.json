@@ -1,0 +1,49 @@
+{
+  "name": "protractor-typescript-cucumber",
+  "version": "4.0.0",
+  "license": "MIT",
+  "description": "To demostrate protractor cucumber tests for angular/non angular apps with allure report framework",
+  "homepage": "https://github.com/igniteram/protractor-cucumber-typescript",
+  "keywords": [
+    "protractor",
+    "cucumber",
+    "typescript",
+    "angular",
+    "angularjs",
+    "testing",
+    "behaviour driven development",
+    "bdd",
+    "selenium",
+    "webdriverJS",
+    "gherkin",
+    "automation testing"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf typeScript/",
+    "clean-build": "npm run clean && npm run build",
+    "init-contributors": "all-contributors init",
+    "add-contributors": "all-contributors add",
+    "generate-contributors": "all-contributors generate",
+    "test": "protractor typeScript/config/config.js",
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start"
+  },
+  "author": "neelima.pondreti@gmfinancial.com",
+  "devDependencies": {
+    "@types/cucumber": "^6.0.1",
+    "@types/node": "^14.0.24",
+    "@types/selenium-webdriver": "^4.0.9",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
+    "mkdirp": "^1.0.4",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.2.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
