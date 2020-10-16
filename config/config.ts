@@ -9,7 +9,7 @@ export const config: Config = {
 
     SELENIUM_PROMISE_MANAGER: false,
 
-    baseUrl: "https://www.getmode.com/home",
+    baseUrl: "https://www.getmode.com",
 
     capabilities: {
         browserName: "chrome",

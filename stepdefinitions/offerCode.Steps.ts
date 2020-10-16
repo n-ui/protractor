@@ -1,15 +1,14 @@
-import { browser } from "protractor";
-import { OfferPageObject } from "../pages/offerCode.Page";
+import {Injector,Resolver} from "../diLib/injector";
+import { OfferCodePageObject } from "../pages/offerCode.Page";
 const {Before, Given,When,Then } = require("cucumber");
 const chai = require("chai").use(require("chai-as-promised"));
 const expect = chai.expect;
 
-let offercodePage: OfferPageObject;
-
+let offercodePage: OfferCodePageObject;
 
 Before(() =>{
-    offercodePage  = new OfferPageObject();
-})
+    offercodePage = Resolver.resolve<OfferCodePageObject>(OfferCodePageObject);
+});
 
 
 Given('I am on Mode website home page', async () => {
